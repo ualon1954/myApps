@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>QuizMaster PRO Ultimate</title>
+    <link rel="stylesheet" href="quiz1.css">
+</head>
+
+<body>
+    <header>
+        <div class="brand"><span>Q</span> QuizMaster <b>PRO</b><em>ULTIMATE</em></div>
+        <div><button id="theme">☀️</button><button id="sound">🔊</button></div>
+    </header>
+    <main>
+        <section id="home" class="screen active">
+            <div class="hero">
+                <h1>Think fast.<br><i>Score big.</i></h1>
+                <p>Timed questions, streak bonuses and a cinematic trophy celebration.</p>
+                <div class="features">
+                    <div><b>10</b><small>Questions</small></div>
+                    <div><b>20s</b><small>Timer</small></div>
+                    <div><b>1000</b><small>Max Score</small></div>
+                    <div><b>5</b><small>Trophy tiers</small></div>
+                </div><button id="start" class="primary">Start Ultimate Quiz →</button>
+                <p class="best">Personal best: <b id="best">0</b></p>
+            </div>
+        </section>
+        <section id="quiz" class="screen">
+            <div class="meta">
+                <div><small>QUESTION</small>
+                    <h2><span id="num">1</span><i>/10</i></h2>
+                </div>
+                <div id="ring" class="ring"><strong id="timer">20</strong></div>
+                <div class="score"><small>SCORE</small><b id="score">0</b></div>
+            </div>
+            <div class="progress"><span id="bar"></span></div>
+            <div class="card">
+                <div><span id="cat" class="pill"></span><span id="diff" class="diff"></span></div>
+                <h3 id="question"></h3>
+                <div id="answers" class="answers"></div>
+            </div>
+            <div class="footer"><span>🔥 Streak <b id="streak">0</b> <em id="bonus"></em></span><button id="next" class="next" disabled>Next →</button></div>
+        </section>
+        <section id="results" class="screen">
+            <div class="card results">
+                <div id="resultIcon" class="big">🏆</div><small>QUIZ COMPLETE</small>
+                <h1 id="resultTitle">Excellent!</h1>
+                <div class="final"><b id="finalScore">0</b><small>POINTS</small></div>
+                <p id="summary"></p>
+                <div class="stats">
+                    <div><b id="correct">0</b><small>Correct</small></div>
+                    <div><b id="wrong">0</b><small>Wrong</small></div>
+                    <div><b id="accuracy">0%</b><small>Accuracy</small></div>
+                    <div><b id="bestStreak">0</b><small>Best Streak</small></div>
+                </div><button id="again" class="primary">Play Again ↻</button><button id="review" class="secondary">Review Answers</button>
+                <div id="reviewPanel" class="review hidden"></div>
+            </div>
+        </section>
+    </main>
+    <div id="celebration" class="overlay hidden">
+        <div id="confetti"></div>
+        <div class="modal">
+            <div class="rays"></div>
+            <div class="trophy-stage">
+                <div class="glow"></div>
+                <div id="trophy" class="trophy">🏆</div>
+            </div><small class="gold">★ ACHIEVEMENT UNLOCKED ★</small>
+            <h2 id="tierTitle">Gold Champion!</h2>
+            <div id="tier" class="tier">GOLD</div>
+            <p id="tierText"></p><small class="label">FINAL SCORE</small>
+            <div id="animatedScore" class="animatedScore">0</div>
+            <div class="celebrateStats">✓ <b id="cCorrect">0</b> correct &nbsp; 🔥 <b id="cStreak">0</b> streak &nbsp; ⚡ <b id="cAccuracy">0%</b></div><button id="continue" class="primary">Continue →</button>
+        </div>
+    </div>
+    <div id="toast"></div>
+    <script src="quiz1.js"></script>
+</body>
+
+</html>

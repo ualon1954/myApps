@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <title>חידון</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body dir="rtl">
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">Q</span><span>חידון <b>UZI</b></span></div>
+      <div class="top-actions">
+        <button id="themeBtn" class="icon-btn" title="Toggle theme">☀</button>
+        <button id="soundBtn" class="icon-btn" title="Toggle sound">🔊</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="startScreen" class="screen active">
+        <div class="hero-card">
+          <!-- <div class="hero-badge">PREMIUM QUIZ EXPERIENCE</div> -->
+          <h1>אתגדו&nbsp;&nbsp;את<br><span>הידע&nbsp;&nbsp;שלכם.</span></h1>
+          <p>אפליקציית חידון מהירה, מלוטשת ורספונסיבית עם טיימר ספירה לאחור, ניקוד, רצפים ותוצאות מפורטות.</p>
+          <div class="feature-grid">
+            <div><strong id="q_num">10</strong><small>שאלות</small></div>
+            <div><strong>20s</strong><small>זמן לשאלה</small></div>
+            <div><strong id="max-score">1000</strong><small>ניקוד מירבי</small></div>
+          </div>
+          <button id="startBtn" class="primary-btn">התחל חידון <span>←</span></button>
+        </div>
+      </section>
+
+      <section id="quizScreen" class="screen">
+        <div class="quiz-head">
+          <div>
+            <span class="eyebrow">שאלה</span>
+            <div class="question-counter"><span id="currentNo">1</span><span class="muted"> / <span id="totalNo">10</span></span></div>
+          </div>
+          <div class="timer-wrap">
+            <div id="timerRing" class="timer-ring"><span id="timer">20</span></div>
+          </div>
+          <div class="score-box"><span>ניקוד</span><strong id="score">0</strong></div>
+        </div>
+
+        <div class="progress"><div id="progressBar"></div></div>
+
+        <div class="question-card">
+          <div class="category-pill" id="category">General</div>
+          <h2 id="questionText"></h2>
+          <div id="answers" class="answers"></div>
+        </div>
+
+        <div class="quiz-footer">
+          <div class="streak">🔥 רצף <strong id="streak">0</strong></div>
+          <button id="nextBtn" class="next-btn" disabled>שאלה הבאה <span>←</span></button>
+        </div>
+      </section>
+
+      <section id="resultScreen" class="screen">
+        <div class="result-card">
+          <div class="result-icon">🏆</div>
+          <span class="eyebrow">החידון הושלם</span>
+          <h1 id="resultTitle">מעולה!</h1>
+          <div class="final-score"><span id="finalScore">0</span><small>נקודות</small></div>
+          <p id="resultMessage"></p>
+          <div class="stats-grid">
+            <div><strong id="correctCount">0</strong><span>נכון</span></div>
+            <div><strong id="wrongCount">0</strong><span>לא נכון</span></div>
+            <div><strong id="accuracy">0%</strong><span>דיוק</span></div>
+            <div><strong id="bestStreak">0</strong><span>רצף מיטבי</span></div>
+          </div>
+          <div class="result-actions">
+            <button id="restartBtn" class="primary-btn">נסה שוב ↻</button>
+            <button id="reviewBtn" class="secondary-btn">סקירת תשובות</button>
+          </div>
+          <div dir="rtl" id="reviewList" class="review-list hidden"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="quiz.js"></script>
+</body>
+</html>
