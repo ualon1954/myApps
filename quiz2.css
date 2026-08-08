@@ -142,7 +142,7 @@ header button {
 .features,
 .stats {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     max-width: 600px;
     margin: 30px auto
@@ -204,7 +204,8 @@ header button {
 
 .meta small,
 .score small {
-    font-size: 9px;
+    font-family: sans-serif;
+    font-size: 20px;
     letter-spacing: 2px;
     color: #929ab2;
     font-weight: 900
@@ -288,7 +289,7 @@ header button {
     display: inline-block;
     border-radius: 99px;
     padding: 8px 12px;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 900;
     letter-spacing: 1px
 }
@@ -641,6 +642,18 @@ header button {
         font-size: 30px;
         letter-spacing: 2px
     }
+    .meta h2 {
+        font-size: 20px
+    }
+    .score b {
+        font-size: 20px
+    }
+    .meta small,
+    .score small {
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 700
+}
     .card h3 {
         font-size: 18px
     }

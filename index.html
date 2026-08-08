@@ -16,10 +16,10 @@
     <main>
         <section id="home" class="screen active">
             <div class="hero">
-                <h1>חשבו מהר.<br><i>קבלו ציון גבוה!</i></h1>
-                <p>שאלות מוגבלות בזמן, בונוסים ברצף וחגיגת גביעים קולנועית.</p>
+                <h1>חשבו מהר<br><i>וקבלו ציון גבוה!</i></h1>
+                <p>שאלות מוגבלות בזמן, בונוסים ברצף וחגיגת מדליות וגביעים.</p>
                 <div class="features">
-                    <div><strong id="q_num">10</strong><small>שאלות</small></div>
+                    <div><strong id="q_num">/10</strong><small>שאלות</small></div>
                     <div><strong>20s</strong><small>זמן לתשובה</small></div>
                     <div><strong id="max-points">1000</strong><small>ניקוד מירבי</small></div>
                     <div><strong>5</strong><small>רמות גביעים</small></div>
@@ -30,7 +30,7 @@
         <section id="quiz" class="screen">
             <div class="meta">
                 <div><small>שאלה</small>
-                    <h2><span id="num">1</span><i>/10</i></h2>
+                    <h2><span id="num">1</span><i id="total-no">/10</i></h2>
                 </div>
                 <div id="ring" class="ring"><strong id="timer">20</strong></div>
                 <div class="score"><small>ניקוד</small><b id="score">0</b></div>
@@ -66,12 +66,14 @@
             <div class="trophy-stage">
                 <div class="glow"></div>
                 <div id="trophy" class="trophy">🏆</div>
-            </div><small class="gold">★ ACHIEVEMENT UNLOCKED ★</small>
+            </div><small class="gold">★ הישג נפתח ★</small>
             <h2 id="tierTitle">אלוף הזהב!</h2>
             <div id="tier" class="tier">GOLD</div>
             <p id="tierText"></p><small class="label">ניקוד סופי</small>
             <div id="animatedScore" class="animatedScore">0</div>
-            <div dir="rtl" class="celebrateStats">✓ <b id="cCorrect">0</b> נכון &nbsp; 🔥 <b id="cStreak">0</b> רצף &nbsp; ⚡ <b id="cAccuracy">0%</b></div><button id="continue" class="primary">המשך ←</button>
+            <div dir="rtl" class="celebrateStats">✓ <b id="cCorrect">0</b> נכון &nbsp; 🔥 <b id="cStreak">0</b> רצף &nbsp; ⚡ <b id="cAccuracy">0%</b></div>
+            <!-- <div dir="rtl" class="celebrateStats">✓ <b id="cCorrect">0</b> נכון &nbsp;<b id="cWrong">0</b> לא נכון &nbsp; 🔥 <b id="cStreak">0</b> רצף &nbsp; ⚡ <b id="cAccuracy">0%</b></div> -->
+            <button id="continue" class="primary">המשך ←</button>
         </div>
     </div>
     <div id="toast"></div>
