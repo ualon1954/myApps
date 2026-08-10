@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body  class="dark">
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="myapp.html" class="logo">
+                <span>✦</span> UziWeb
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="myapp.html" class="active">חידון</a></li>
+                <li><a href="bmi.html">מחשבון BMI</a></li>
+                <!-- <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li> -->
+            </ul>
+
+            <button class="theme-toggle" id="themeToggle">
+                🌙
+            </button>
+
+        </nav>
+
+    </header>
+     <header class="headquiz"> 
+        <div class="brand"><span>Q</span> חידון <em>UZI</em></div>
+        <div><button id="sound">🔊</button></div>
+    </header>
+    <main>
+        <section id="home" class="screen active">
+            <div class="hero">
+                <h1>חשבו מהר<br><i>וקבלו ציון גבוה!</i></h1>
+                <p>שאלות מוגבלות בזמן, בונוסים ברצף וחגיגת מדליות וגביעים.</p>
+                <div class="features">
+                    <div><strong id="q_num">/10</strong><small>שאלות</small></div>
+                    <div><strong>20s</strong><small>זמן לתשובה</small></div>
+                    <div><strong id="max-points">1000</strong><small>ניקוד מירבי</small></div>
+                    <div><strong>5</strong><small>רמות גביעים</small></div>
+                </div><button id="start" class="primary">התחל חידון ←</button>
+                <p class="best">שיא אישי: <b id="best">0</b></p>
+            </div>
+        </section>
+        <section id="quiz" class="screen">
+            <div class="meta">
+                <div><small>שאלה</small>
+                    <h2><span id="num">1</span><i id="total-no">/10</i></h2>
+                </div>
+                <div id="ring" class="ring"><strong id="timer">20</strong></div>
+                <div class="score"><small>ניקוד</small><b id="score">0</b></div>
+            </div>
+            <div class="progress"><span id="bar"></span></div>
+            <div class="card">
+                <div><span id="cat" class="pill"></span><span id="diff" class="diff"></span></div>
+                <h3 id="question"></h3>
+                <div id="answers" class="answers"></div>
+            </div>
+            <div class="footer"><span>🔥 רצף <b id="streak">0</b> <em id="bonus"></em></span><button id="next" class="next" disabled>הבא ←</button></div>
+        </section>
+        <section id="results" class="screen">
+            <div class="card results">
+                <div id="resultIcon" class="big">🏆</div><small>החידון הושלם</small>
+                <h1 id="resultTitle">מעולה!</h1>
+                <div class="final"><b id="finalScore">0</b><small>נקודות</small></div>
+                <p id="summary"></p>
+                <div class="stats">
+                    <div><b id="correct">0</b><small>נכון</small></div>
+                    <div><b id="wrong">0</b><small>לא נכון</small></div>
+                    <div><b id="accuracy">0%</b><small>דיוק</small></div>
+                    <div><b id="bestStreak">0</b><small>רצף מירבי</small></div>
+                </div><button id="again" class="primary">נסה שוב ↻</button><button id="review" class="secondary">הצג תשובות</button>
+                <div id="reviewPanel" class="review hidden"></div>
+            </div>
+        </section>
+    </main>
+    <div id="celebration" class="overlay hidden">
+        <div id="confetti"></div>
+        <div class="modal">
+            <div class="rays"></div>
+            <div class="trophy-stage">
+                <div class="glow"></div>
+                <div id="trophy" class="trophy">🏆</div>
+            </div><small class="gold">★ הישג נפתח ★</small>
+            <h2 id="tierTitle">אלוף הזהב!</h2>
+            <div id="tier" class="tier">GOLD</div>
+            <p id="tierText"></p><small class="label">ניקוד סופי</small>
+            <div id="animatedScore" class="animatedScore">0</div>
+            <div dir="rtl" class="celebrateStats">✓ <b id="cCorrect">0</b> נכון &nbsp; 🔥 <b id="cStreak">0</b> רצף &nbsp; ⚡ <b id="cAccuracy">0%</b></div>
+            <!-- <div dir="rtl" class="celebrateStats">✓ <b id="cCorrect">0</b> נכון &nbsp;<b id="cWrong">0</b> לא נכון &nbsp; 🔥 <b id="cStreak">0</b> רצף &nbsp; ⚡ <b id="cAccuracy">0%</b></div> -->
+            <button id="continue" class="primary">המשך ←</button>
+        </div>
+    </div>
+    <div id="toast"></div>
+    <footer class="footer" dir="auto">
+         <p>© <span id="year"></span> UziWeb כל הזכויות שמורות  </p>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

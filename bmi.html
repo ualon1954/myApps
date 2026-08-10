@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>מחשבון BMI</title>
+<link rel="stylesheet" href="css/bmi.css">
+
+</head>
+<body class="dark">
+    <header class="header">
+
+    <nav class="navbar">
+
+        <a href="myapp.html" class="logo">
+            <span>✦</span> NovaWeb
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="myapp.html">חידון</a>
+            </li>
+
+            <li>
+                <a href="bmi.html" class="active">מחשבון BMI</a>
+            </li>
+
+            <!-- <li>
+                <a href="services.html" class="active">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li> -->
+
+        </ul>
+
+        <button class="theme-toggle" id="themeToggle">
+            🌙
+        </button>
+
+    </nav>
+
+</header>
+ 
+<div class="container" dir="auto">
+    
+    <h1 dir="rtl">
+    🏥 מחשבון  BMI ו-BMR<span class="help-icon" onclick="openHelp()">?</span></h1>
+    <div class="modal" id="helpModal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="closeHelp()">&times;</span>
+            <br><br>
+            BMI - מדד מסת הגוף (Body Mass Index) הוא המדד העולמי המקובל לקביעה האם המשקל תקין או לא. החישוב של ה־BMI הוא המשקל שלך (בקילוגרמים) חלקי הגובה שלך בריבוע (במטרים).
+            <br><br>
+             מדד BMR בודק את קצב חילוף החומרים הבסיסי – Basal Metabolic Rate. מה הכוונה? כמה אנרגיה הגוף שלנו צורך במנוחה לצורך קיום פעילות חיונית כמו נשימה, פעילות עצבית, פעילות מערכת הלב ועוד. המדד מהווה את החלק הגדול ביותר משריפת הקלוריות היומית שלך, בדרך כלל 60 עד 75%. גם אם תבלו את כל היום במיטה בלי לעשות כלום, הגוף שלך עדיין יזדקק לכמות הקלוריות הזו רק כדי להישאר בחיים.
+            <!-- <button onclick="closeHelp()">Close</button> -->
+
+        </div>
+    </div>
+    
+    <!-- <div id="tooltip" class="tooltip" dir="rtl">
+        מדד מסת הגוף (Body Mass Index) הוא המדד העולמי המקובל לקביעה האם המשקל תקין או לא. החישוב של ה־BMI הוא המשקל שלך (בקילוגרמים) חלקי הגובה שלך בריבוע (במטרים).
+    </div> -->
+<div class="input-group">
+    <!-- <label>Gender</label> -->
+
+    <div class="gender" id="gender">
+    <label>
+    <input type="radio" name="gender" value="גבר" checked onchange="onGenderChange(event)">
+    גבר
+    </label>
+
+    <label>
+    <input type="radio" name="gender" value="אישה"  onchange="onGenderChange(event)">
+    אישה
+    </label>
+</div>
+    <div class="input-group">
+        
+        <label>
+          גיל שלך
+            <span class="range-value" id="ageValue" dir="rtl">50</span>
+        </label>
+        <input type="range" id="age" min="30" max="99" value="50">
+    </div>
+    <div class="input-group">
+        <label>
+            גובה שלך  
+            <span class="range-value" id="heightValue" dir="rtl">170</span>
+        </label>
+        <input  type="range" id="height" min="120" max="220" value="170">
+    </div>
+
+    <div class="input-group">
+        <label>
+            משקל שלך
+            <span class="range-value" id="weightValue" dir="rtl">70</span>
+        </label>
+        <input type="range" id="weight" min="30" max="200" value="70">
+    </div>
+
+    <div class="result">
+        <div id="mybmi">שלך BMI</div>
+        <div class="bmi-value" id="bmi">24.2</div>
+        <div class="category" id="category">משקל תקין</div>
+        <div class="stats">
+            <div class="box">
+            <h3>BMR</h3>
+            <div id="bmr"></div>
+            </div>
+            <div class="box">
+            <h3>משקל אידיאלי</h3>
+            <div id="ideal"></div>
+        </div>
+    </div>
+
+    <!-- <div class="scale">
+        <div class="scale-bar">
+            <div class="pointer" id="pointer"></div>
+        </div>
+
+        <div class="legend">
+            <span id="underweight">תת משקל</span>
+            <span id="normal">משקל תקין</span>
+            <span id="overweight">עודף משקל</span>
+            <span id="obese">השמנת יתר</span>
+        </div>
+    </div> -->
+
+    <div class="info" dir="rtl">
+        <strong>קטגוריות BMI</strong>
+        <ul>
+            <li id="underweight">18.5- = תת משקל</li>
+            <li id="normal">18.5 - 24.9 = משקל תקין</li>
+            <li id="overweight">25 - 29.9 = עודף משקל</li>
+            <li id="obese">30+ = השמנת יתר</li>
+        </ul>
+        <!-- <div class="box">
+          <strong>BMR</strong>
+          <div id="bmr"></div>
+        </div>
+
+        <div class="box">
+           <strong>משקל מומלץ</strong>
+           <div id="ideal"></div>
+       </div> -->
+    </div>
+    <footer>
+        <p>© <span id="year"></span> UziWeb כל הזכויות שמורות  </p>
+    </footer>
+
+</div>
+
+<script src="js/bmi.js" ></script>
+</body>
+</html>
