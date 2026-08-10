@@ -334,10 +334,11 @@ body.dark .header {
     position: fixed;
 } */
 .container{
-      /* position: absolute;
+    width: 90%;
+    position: absolute;
     top: 21%;
     left: 50%;
-    transform: translate(-50%, -20%); */
+    transform: translate(-50%, -20%);
     /* display: grid; */
     /* background:linear-gradient(135deg,#0f172a,#1e293b); */
     background: var(--panel);
