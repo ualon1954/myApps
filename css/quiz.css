@@ -972,10 +972,6 @@ header button {
         width: 100%;
     }
 
-    heade .header {
-        background: rgb(94, 255, 0);
-    }
-
     .headquiz {
         height: 15px;
         margin-top: 15px;
@@ -989,8 +985,7 @@ header button {
     .hero h1 {
         font-size: 30px;
         letter-spacing: 2px;
-        margin-top: 0;
-       
+           
     }
     .meta h2 {
         font-size: 20px
