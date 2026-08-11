@@ -459,6 +459,10 @@ label{
     color: var(--label-color);
 }
 
+#cat {
+    color: black;
+}
+
 .range-value{
     float:right;
     color:#2563eb;
@@ -655,9 +659,10 @@ input[type=range]{
     } */
     .container {
         /* background: green; */
-        top: 27%;
+        top: 28%;
         width: 90%;
         margin: auto;
+        height: 50;
         /* background: #111827; */
         /* margin-top: 5px; */
     }
