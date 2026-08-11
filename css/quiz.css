@@ -324,7 +324,7 @@ body.dark .header {
 
 /* QUIZ */
 
-.headquiz,
+/* .headquiz, */
 main {
     width: min(1050px, calc(100% - 30px));
     margin: auto
@@ -927,13 +927,7 @@ header button {
 /* MOBILE */
 
 @media (max-width: 600px) {
-    .headquiz {
-       position: absolute;
-       top: 49px;
-       /* height: 10; */
-       margin-bottom: 30px;
-    }
-
+    
     .menu-toggle {
         display: block;
     }
@@ -978,8 +972,18 @@ header button {
         width: 100%;
     }
 
+    heade .header {
+        background: rgb(94, 255, 0);
+    }
+
+    .headquiz {
+        height: 15px;
+        margin-top: 15px;
+        /* margin-bottom: 5px; */
+    }
+
     .hero {
-        padding: 45px 20px
+        padding: 45px 20px;
     }
 
     .hero h1 {
@@ -1124,11 +1128,5 @@ header button {
 
         padding-right: 15px;
     }
-
-
-    .contact-form {
-
-        padding: 25px 20px;
-    }
-
+   
 }
