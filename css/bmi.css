@@ -334,8 +334,10 @@ body.dark .header {
     position: fixed;
 } */
 .container{
-    width: 700px;
-    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    /* position:absolute; */
+    margin: 0 auto;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -20%);
