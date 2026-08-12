@@ -335,7 +335,9 @@ body.dark .header {
 } */
 .container{
     width: 700px;
-    position:absolute;
+    display:grid;
+    place-items: center;
+    /* position:absolute; */
     top: 30%;
     left: 50%;
     transform: translate(-50%, -20%);
