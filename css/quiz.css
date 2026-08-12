@@ -86,7 +86,7 @@ textarea {
 
 .header {
 
-    position: sticky;
+    position: fixed;
 
     top: 0;
 
@@ -275,17 +275,23 @@ textarea {
 /* FOOTER */
 
 .footer {
-   direction: rtl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
     border-top:
         1px solid var(--border);
 
     padding: 30px 25px;
 
     text-align: center;
-
+    
     color: var(--muted);
 }
 
+.footer p {
+    margin-right: 50px;
+}
 
 /* DARK MODE */
 
@@ -395,6 +401,7 @@ header button {
 }
 
 .hero {
+   
     max-width: 850px;
     margin: auto;
     text-align: center;
