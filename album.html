@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <title>Vistora — Ultimate Photo Album</title>
+  <link rel="stylesheet" href="css/album.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <a class="brand" href="#home" data-page="home"><span class="brand-mark">V</span><span>Vistora</span></a>
+      <button class="mobile-menu" id="menuToggle" aria-label="Open menu">☰</button>
+      <nav class="nav" id="mainNav">
+        <a href="#home" data-page="home" class="active">Home</a>
+        <a href="#albums" data-page="albums">Albums</a>
+        <a href="#favorites" data-page="favorites">Favorites</a>
+        <a href="#upload" data-page="upload">Upload</a>
+        <a href="#about" data-page="about">About</a>
+      </nav>
+      <div class="top-actions">
+        <button class="icon-btn" id="themeBtn" title="Toggle theme">◐</button>
+        <button class="profile-btn" id="profileBtn">Guest</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page active-page" id="homePage">
+        <div class="hero">
+          <div>
+            <span class="eyebrow">ULTIMATE PHOTO EXPERIENCE</span>
+            <h1>Your memories.<br><em>Beautifully organized.</em></h1>
+            <p>Explore your collection in a responsive, elegant gallery with albums, favorites, search, fullscreen viewing and local upload.</p>
+            <div class="hero-actions">
+              <button class="primary" data-page="albums">Explore gallery →</button>
+              <button class="secondary" data-page="upload">Add photos</button>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-stat"><strong id="photoCount">0</strong><span>Photos</span></div>
+            <div class="hero-stat"><strong id="albumCount">6</strong><span>Albums</span></div>
+            <div class="hero-stat"><strong id="favoriteCount">0</strong><span>Favorites</span></div>
+          </div>
+        </div>
+        <div class="section-head"><div><span class="eyebrow">CURATED</span><h2>Featured moments</h2></div><button class="text-btn" data-page="albums">View all →</button></div>
+        <div class="featured-grid" id="featuredGrid"></div>
+      </section>
+
+      <section class="page" id="albumsPage">
+        <div class="section-head">
+          <div><span class="eyebrow">YOUR COLLECTION</span><h2>Photo albums</h2></div>
+          <div class="tools"><input id="searchInput" class="search" placeholder="⌕  Search photos..." type="search"><button class="secondary" id="sortBtn">Sort: Newest</button></div>
+        </div>
+        <div class="chips" id="chips"></div>
+        <div class="photo-grid" id="photoGrid"></div>
+      </section>
+
+      <section class="page" id="favoritesPage">
+        <div class="section-head"><div><span class="eyebrow">SAVED MOMENTS</span><h2>Favorites</h2></div></div>
+        <div class="photo-grid" id="favoriteGrid"></div>
+      </section>
+
+      <section class="page" id="uploadPage">
+        <div class="upload-wrap">
+          <span class="eyebrow">LOCAL PHOTO MANAGER</span><h2>Upload your memories</h2>
+          <p>Images are previewed and stored in this browser using local storage. Nothing is uploaded to a server.</p>
+          <label class="dropzone" id="dropzone">
+            <input type="file" id="fileInput" accept="image/*" multiple hidden>
+            <span class="upload-icon">＋</span><strong>Choose photos</strong><span>or drag & drop images here</span>
+          </label>
+          <div class="upload-preview" id="uploadPreview"></div>
+        </div>
+      </section>
+
+      <section class="page" id="aboutPage">
+        <div class="about">
+          <span class="eyebrow">VISTORA</span><h2>Built for your memories.</h2>
+          <p>A standalone HTML, CSS and JavaScript photo album with a polished responsive interface, scrolling navigation, login modal, search, filters, favorites, fullscreen lightbox, theme switcher and local photo upload.</p>
+          <div class="feature-cards">
+            <article><b>⚡ Fast</b><span>No frameworks or build tools required.</span></article>
+            <article><b>📱 Responsive</b><span>Designed for desktop, tablet and mobile.</span></article>
+            <article><b>🔒 Local-first</b><span>Your demo uploads remain in your browser.</span></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer><span>© 2026 Vistora</span><span>Ultimate Photo Album</span></footer>
+  </div>
+
+  <div class="modal" id="loginModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close" data-close="loginModal">×</button>
+      <span class="eyebrow">WELCOME BACK</span><h2>Sign in</h2>
+      <form id="loginForm">
+        <label>Email<input id="email" type="email" placeholder="you@example.com" required></label>
+        <label>Password<input id="password" type="password" placeholder="••••••••" required minlength="4"></label>
+        <div class="remember"><label><input type="checkbox" checked> Remember me</label><a href="#" id="forgot">Forgot password?</a></div>
+        <button class="primary wide" type="submit">Sign in</button>
+      </form>
+      <p class="demo-note">Demo login — any valid email and 4+ character password works.</p>
+    </div>
+  </div>
+
+  <div class="modal viewer" id="viewerModal" aria-hidden="true">
+    <button class="viewer-close" data-close="viewerModal">×</button>
+    <button class="viewer-arrow left" id="prevPhoto">‹</button>
+    <img id="viewerImage" alt="">
+    <button class="viewer-arrow right" id="nextPhoto">›</button>
+    <div class="viewer-caption" id="viewerCaption"></div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="js/album.js"></script>
+</body>
+</html>
