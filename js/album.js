@@ -43,21 +43,21 @@ const photos = [{
     {
         id: 7,
         title: "Architecture",
-        album: "Urban1",
+        album: "Urban",
         date: "2026-07-25",
         src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1000&q=85"
     },
     {
         id: 8,
         title: "Alpine Lake",
-        album: "Nature1",
+        album: "Nature",
         date: "2026-07-20",
         src: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1000&q=85"
     },
     {
         id: 9,
         title: "Palm Paradise",
-        album: "Travel1",
+        album: "Travel",
         date: "2026-07-15",
         src: "https://images.unsplash.com/photo-1509233720127-6ee79b0628d0?auto=format&fit=crop&w=1000&q=85"
     },
@@ -71,14 +71,14 @@ const photos = [{
     {
         id: 11,
         title: "Quiet Lake",
-        album: "Nature2",
+        album: "Nature",
         date: "2026-07-09",
         src: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85"
     },
     {
         id: 12,
         title: "Old Streets",
-        album: "Urban2",
+        album: "Urban",
         date: "2026-07-05",
         src: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1000&q=85"
     }
