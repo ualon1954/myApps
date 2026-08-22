@@ -544,7 +544,7 @@ main {
 
 .modal-box input[type=text],
 .modal-box input[type=password] {
-    width: 100%;
+    width: 90%;
     margin-top: 7px;
     padding: 13px;
     border: 1px solid #dce1eb;
