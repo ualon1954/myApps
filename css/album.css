@@ -113,6 +113,7 @@ body.dark {
 
 .icon-btn,
 .profile-btn,
+.logout-btn,
 .mobile-menu {
     border: 1px solid #dfe3ed;
     background: #fff;
@@ -128,6 +129,7 @@ body.dark {
 
 .dark .icon-btn,
 .dark .profile-btn,
+.dark .logoutBtn,
 .dark .mobile-menu {
     background: #111625;
     border-color: #293146;
@@ -324,7 +326,7 @@ main {
     height: 100%;
     min-height: 260px;
     display: block;
-    object-fit: cover;
+    object-fit:cover;
     transition: transform .5s
 }
 
@@ -481,6 +483,10 @@ main {
     line-height: 1.5
 }
 
+.profile-btn span {
+    color:white;
+}
+
 .modal {
     position: fixed;
     inset: 0;
@@ -536,7 +542,7 @@ main {
     margin: 15px 0
 }
 
-.modal-box input[type=email],
+.modal-box input[type=text],
 .modal-box input[type=password] {
     width: 100%;
     margin-top: 7px;
@@ -546,7 +552,7 @@ main {
     background: #fff
 }
 
-.dark .modal-box input[type=email],
+.dark .modal-box input[type=text],
 .dark .modal-box input[type=password] {
     background: #0b0f1a;
     color: #fff;
@@ -657,6 +663,24 @@ footer {
 
 .dark footer {
     border-color: #202638
+}
+
+#password {
+    position: relative;
+}
+
+/* form #loginForm label {
+    position: relative;
+} */
+.eye {
+    margin-top:240px;
+    padding-left: 5px;
+    position: absolute;
+    font-size: 17px;
+    left: 35px;
+    top: 14px;
+    color: white;
+    cursor: pointer;
 }
 
 @media(max-width:950px) {

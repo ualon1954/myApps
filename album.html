@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0b1020">
   <title>Vistora — Ultimate Photo Album</title>
+  <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   <link rel="stylesheet" href="css/album.css">
 </head>
 <body>
@@ -22,6 +31,7 @@
       <div class="top-actions">
         <button class="icon-btn" id="themeBtn" title="Toggle theme">◐</button>
         <button class="profile-btn" id="profileBtn">Guest</button>
+        <button class="logout-btn" id="logoutBtn" onclick="logout()">יציאה</button>
       </div>
     </header>
 
@@ -89,17 +99,21 @@
     <footer><span>© 2026 Vistora</span><span>Ultimate Photo Album</span></footer>
   </div>
 
-  <div class="modal" id="loginModal" aria-hidden="true">
+  <div class="modal" id="loginModal">
     <div class="modal-box">
-      <button class="close" data-close="loginModal">×</button>
-      <span class="eyebrow">WELCOME BACK</span><h2>Sign in</h2>
+      <!-- <button class="close" data-close="loginModal">×</button> -->
+      <span class="eyebrow">ברוכים הבאם</span><h2>מערכת אלבום תמונות</h2>
       <form id="loginForm">
-        <label>Email<input id="email" type="email" placeholder="you@example.com" required></label>
-        <label>Password<input id="password" type="password" placeholder="••••••••" required minlength="4"></label>
-        <div class="remember"><label><input type="checkbox" checked> Remember me</label><a href="#" id="forgot">Forgot password?</a></div>
-        <button class="primary wide" type="submit">Sign in</button>
+        <label>קוד משתמש<input id="user-name" type="text" autocomplete="off" placeholder="נא להזין קוד משתמש" required></label>
+        <label>סיסמה<input id="password" type="password" autocomplete="off" placeholder="נא להזין סיסמה" required minlength="4"></label>
+        <!-- EYE SPAN  -->
+          <span class="eye">
+            <i class="fa-regular fa-eye-slash"></i>
+          </span>
+        <!-- <div class="remember"><label><input type="checkbox" checked> Remember me</label><a href="#" id="forgot">Forgot password?</a></div> -->
+        <button class="primary wide submit" type="submit">כניסה</button>
       </form>
-      <p class="demo-note">Demo login — any valid email and 4+ character password works.</p>
+      <!-- <p class="demo-note">Demo login — any valid email and 4+ character password works.</p> -->
     </div>
   </div>
 
@@ -113,5 +127,6 @@
 
   <div class="toast" id="toast"></div>
   <script src="js/album.js"></script>
+  <script src="js/login.js"></script>
 </body>
 </html>

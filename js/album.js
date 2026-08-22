@@ -1,87 +1,146 @@
-const photos = [{
-        id: 1,
-        title: "Mountain Escape",
-        album: "Nature",
-        date: "2026-08-12",
-        src: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"
+const photos = [
+    {
+        id: 13,
+        title: "קצת נוסטלגיה",
+        album: "ילדות",
+        date: "2000-07-05",
+        src: "images/13.jpg"
     },
     {
-        id: 2,
-        title: "Ocean Morning",
-        album: "Travel",
-        date: "2026-08-10",
-        src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85"
+        id: 14,
+        title: "קצת נוסטלגיה",
+        album: "ילדות",
+        date: "2000-07-05",
+        src: "images/14.jpeg"
     },
     {
-        id: 3,
-        title: "City Lights",
-        album: "Urban",
-        date: "2026-08-08",
-        src: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1000&q=85"
+        id: 15,
+        title: "קצת נוסטלגיה",
+        album: "ילדות",
+        date: "2000-07-05",
+        src: "images/15.jpeg"
     },
     {
-        id: 4,
-        title: "Forest Path",
-        album: "Nature",
-        date: "2026-08-06",
-        src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=85"
+        id: 16,
+        title: "קצת נוסטלגיה",
+        album: "ילדות",
+        date: "2000-07-05",
+        src: "images/16.jpeg"
     },
     {
-        id: 5,
-        title: "Desert Road",
-        album: "Adventure",
-        date: "2026-08-03",
-        src: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85"
+        id: 17,
+        title: "קצת נוסטלגיה",
+        album: "אחים",
+        date: "2000-07-05",
+        src: "images/17.jpeg"
     },
     {
-        id: 6,
-        title: "Golden Coast",
-        album: "Travel",
-        date: "2026-07-30",
-        src: "https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=1000&q=85"
+        id: 18,
+        title: "קצת נוסטלגיה",
+        album: "שונות",
+        date: "2000-07-05",
+        src: "images/18.jpeg"
     },
     {
-        id: 7,
-        title: "Architecture",
-        album: "Urban",
-        date: "2026-07-25",
-        src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1000&q=85"
+        id: 19,
+        title: "קצת נוסטלגיה",
+        album: "שונות",
+        date: "2000-07-05",
+        src: "images/19.jpeg"
     },
     {
-        id: 8,
-        title: "Alpine Lake",
-        album: "Nature",
-        date: "2026-07-20",
-        src: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1000&q=85"
+        id: 20,
+        title: "קצת נוסטלגיה",
+        album: "שונות",
+        date: "2000-07-05",
+        src: "images/20.jpeg"
     },
     {
-        id: 9,
-        title: "Palm Paradise",
-        album: "Travel",
-        date: "2026-07-15",
-        src: "https://images.unsplash.com/photo-1509233720127-6ee79b0628d0?auto=format&fit=crop&w=1000&q=85"
+        id: 21,
+        title: "קצת נוסטלגיה",
+        album: "שונות",
+        date: "2000-07-05",
+        src: "images/21.jpeg"
     },
     {
-        id: 10,
-        title: "Night Drive",
-        album: "Adventure",
-        date: "2026-07-12",
-        src: "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1000&q=85"
+        id: 22,
+        title: "קצת נוסטלגיה",
+        album: "שונות",
+        date: "2000-07-05",
+        src: "images/22.jpeg"
     },
     {
-        id: 11,
-        title: "Quiet Lake",
-        album: "Nature",
-        date: "2026-07-09",
-        src: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85"
+        id: 23,
+        title: "קצת נוסטלגיה",
+        album: "שונות",
+        date: "2000-07-05",
+        src: "images/23.jpeg"
     },
     {
-        id: 12,
-        title: "Old Streets",
-        album: "Urban",
-        date: "2026-07-05",
-        src: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1000&q=85"
+        id: 24,
+        title: "קצת נוסטלגיה",
+        album: "שונות",
+        date: "2000-07-05",
+        src: "images/24.jpeg"
+    },
+    {
+        id: 25,
+        title: "קצת נוסטלגיה",
+        album: "שונות",
+        date: "2000-07-05",
+        src: "images/25.jpeg"
+    },
+    {
+        id: 26,
+        title: "קצת נוסטלגיה",
+        album: "שונות",
+        date: "2000-07-05",
+        src: "images/26.jpeg"
+    },
+    {
+        id: 27,
+        title: "קצת נוסטלגיה",
+        album: "שונות",
+        date: "2000-07-05",
+        src: "images/27.jpeg"
+    },
+    {
+        id: 28,
+        title: "קצת נוסטלגיה",
+        album: "שונות",
+        date: "2000-07-05",
+        src: "images/28.jpeg"
+    },
+    {
+        id: 29,
+        title: "קצת נוסטלגיה",
+        album: "שונות",
+        date: "2000-07-05",
+        src: "images/29.jpeg"
+    },
+    {
+        id:30,
+        title: "קצת נוסטלגיה",
+        album: "שונות",
+        date: "2000-07-05",
+        src: "images/30.jpeg"
+    },
+    {
+        id: 31,
+        title: "קצת נוסטלגיה",
+        album: "שונות",
+        date: "2000-07-05",
+        src: "images/31.jpeg"
+    },
+    {
+        id: 32,
+        title: "קצת נוסטלגיה",
+        album: "שונות",
+        date: "2000-07-05",
+        src: "images/32.jpeg"
     }
+
+        
 ];
 let favorites = JSON.parse(localStorage.getItem("vistoraFavorites") || "[]");
 let activeAlbum = "All",
@@ -126,12 +185,27 @@ $("#menuToggle").onclick = () => $("#mainNav").classList.toggle("open");
 $("#profileBtn").onclick = () => $("#loginModal").classList.add("open");
 $$("[data-close]").forEach(b => b.onclick = () => $("#" + b.dataset.close).classList.remove("open"));
 window.addEventListener("keydown", e => {
-    if (e.key === "Escape") $$(".modal.open").forEach(m => m.classList.remove("open"));
+    if (e.key === "Escape") $$(".modal.open").forEach(m => m.classList.add("open"));
     if ($("#viewerModal").classList.contains("open")) {
         if (e.key === "ArrowRight") nextPhoto();
         if (e.key === "ArrowLeft") prevPhoto()
     }
 });
+// alert(localStorage.getItem("auth"));
+if(localStorage.getItem("auth") !== "1")  {
+    $("#loginModal").classList.add("open");
+}
+else{
+    $("#loginModal").classList.remove("open")
+}
+
+$("#loginModal").addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        // alert("2");
+        event.preventDefault();
+    }
+});
+
 $("#themeBtn").onclick = () => {
     document.body.classList.toggle("dark");
     localStorage.setItem("vistoraTheme", document.body.classList.contains("dark") ? "dark" : "light")
@@ -227,16 +301,16 @@ function prevPhoto() {
 $("#nextPhoto").onclick = nextPhoto;
 $("#prevPhoto").onclick = prevPhoto;
 
-$("#loginForm").onsubmit = e => {
-    e.preventDefault();
-    const email = $("#email").value;
-    localStorage.setItem("vistoraUser", email);
-    $("#profileBtn").textContent = email.split("@")[0];
-    $("#loginModal").classList.remove("open");
-    toast("Welcome back!");
-};
-if (localStorage.getItem("vistoraUser")) $("#profileBtn").textContent = localStorage.getItem("vistoraUser").split("@")[0];
-
+// $("#loginForm").onsubmit = e => {
+//     e.preventDefault();
+//     const user = $("#user-name").value;
+//     localStorage.setItem("vistoraUser", user);
+//     $("#profileBtn").textContent = user;
+//     $("#loginModal").classList.remove("open");
+//     toast("Welcome back!");
+// };
+// if (localStorage.getItem("vistoraUser")) $("#profileBtn").textContent = localStorage.getItem("vistoraUser").split("@")[0];
+    
 const drop = $("#dropzone"),
     input = $("#fileInput");
 ["dragenter", "dragover"].forEach(ev => drop.addEventListener(ev, e => {
