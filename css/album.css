@@ -669,9 +669,9 @@ footer {
     position: relative;
 }
 
-/* form #loginForm label {
-    position: relative;
-} */
+form #loginForm {
+    max-width: 700px;
+}
 .eye {
     margin-top:240px;
     padding-left: 5px;
