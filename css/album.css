@@ -669,8 +669,8 @@ footer {
     position: relative;
 }
 
-form #loginForm {
-    max-width: 700px;
+form {
+    max-width: 500px;
 }
 .eye {
     margin-top:240px;
