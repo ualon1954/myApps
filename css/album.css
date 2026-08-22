@@ -544,7 +544,7 @@ main {
 
 .modal-box input[type=text],
 .modal-box input[type=password] {
-    width: 90%;
+    width: 100%;
     margin-top: 7px;
     padding: 13px;
     border: 1px solid #dce1eb;
@@ -799,6 +799,9 @@ form {
 
     .viewer-arrow.right {
         right: 8px
+    }
+    input {
+        max-width: 700px;
     }
 }
 
